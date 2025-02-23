@@ -2,5 +2,3 @@
 # 빌드 명령어
 command = "echo 'Starting Build...' && npm run build && echo 'Build Completed'"
 publish = "public"
-
-environment = { LOG_LEVEL = "debug" }

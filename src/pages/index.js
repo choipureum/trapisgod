@@ -14,7 +14,7 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Welcome to Barcadia"
+          title="Trapisgod 사이트만들자 푸름아"
           subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
         />
         <BasicTextModule

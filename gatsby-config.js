@@ -20,6 +20,7 @@ module.exports = {
     developerName: "Morgan Baker Development",
     developerUrl: "https://www.morganbaker.dev",
   },
+  pathPrefix: `/trapisgod`,
   /* Your site config here */
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -66,7 +66,7 @@ const NavModule = () => {
           {title && (
             <LogoStyles>
               <Link to="/">
-                Trapisgod
+                {title}
                 <span>.</span>
               </Link>
             </LogoStyles>

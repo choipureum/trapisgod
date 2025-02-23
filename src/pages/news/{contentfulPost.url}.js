@@ -21,7 +21,7 @@ export const data = graphql`
       title
       introduction
       content {
-        raws
+        raw
       }
       createdAt(formatString: "DD MMMM, YYYY")
     }

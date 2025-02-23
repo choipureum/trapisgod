@@ -1,3 +1,6 @@
 [build]
-command = "npm install --legacy-peer-deps && npm run build"
+# 빌드 명령어
+command = "echo 'Starting Build...' && npm run build && echo 'Build Completed'"
 publish = "public"
+
+environment = { LOG_LEVEL = "debug" }

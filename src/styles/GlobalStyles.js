@@ -62,7 +62,7 @@ export const GlobalStyle = createGlobalStyle`
     --h4: 29px;
     --h5: 27px;
     --h6: 25px;
-    --sectionMargin: 180px;
+    --sectionMargin: 80px;
   }
 
   @media(min-width:1200px) {
@@ -264,7 +264,7 @@ blockquote {
     }
 
     @media(min-width:1024px) {
-      flex-basis: calc(33.333% - 27px);
+      flex-basis: calc(25% - 20px);
     }
   }
 }

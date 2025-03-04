@@ -13,7 +13,7 @@ module.exports = {
     author: "Choipureum",
     twitterUsername: "Trapisgod",
     facebookUsername: "Trapisgod",
-    instagramUsername: "Trapisgod",
+    instagramUsername: "tydollasun",
     linkedinUsername: "trapisgod-development",
     image: "macbook-color.jpg",
     siteUrl: "https://trapisgod.com",

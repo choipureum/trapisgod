@@ -5,10 +5,9 @@ import { FooterStyles, FooterMenuStyles, CopyrightStyles } from "./FooterStyles"
 import useAllProduct from "../../hooks/use-all-product"
 import { UseSiteMetadata } from "../../hooks/useSiteMetadata"
 import {
-  FaFacebookSquare as Facebook,
-  FaTwitterSquare as Twitter,
   FaInstagram as Instagram,
-  FaLinkedin as Linkedin,
+  FaYoutube as Youtube,
+  FaGoogle as Gmail,
 } from "react-icons/fa"
 
 const Footer = () => {
@@ -17,76 +16,12 @@ const Footer = () => {
   return (
     <FooterStyles style={{ marginBottom: 0 }} className="section">
       <div className="container container__tight">
-        <FooterMenuStyles className="footer__menu">
-          <h5>Links</h5>
-          <ul>
-            {menuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link to={item.path} activeClassName="menu__item--active">
-                    {item.text}
-                    <span>.</span>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </FooterMenuStyles>
-        {allProduct.length > 0 && (
-          <FooterMenuStyles className="footer__menu products__menu">
-            <h5>
-              <Link to="/products">
-                All Products<span>.</span>
-              </Link>
-            </h5>
-            <ul>
-              {allProduct.map((item, index) => {
-                const { gatsbyPath, title } = item
-
-                return (
-                  <li key={index}>
-                    <Link to={gatsbyPath}>
-                      {title}
-                      <span>.</span>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </FooterMenuStyles>
-        )}
-
-        {siteMeta.twitterUsername ||
-        siteMeta.facebookUsername ||
-        siteMeta.instagramUsername ||
-        siteMeta.linkedinUsername ? (
+        {siteMeta.instagramUsername ? (
           <FooterMenuStyles className="footer__menu social__menu">
             <h5>
-              Follow Trapisgod<span>.</span>
+              Contact TrapIsGodSound<span>.</span>
             </h5>
             <ul>
-              {siteMeta.twitterUsername && (
-                <li>
-                  <a
-                    href={`https://www.twitter.com/${siteMeta.twitterUsername}`}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    <Twitter />
-                  </a>
-                </li>
-              )}
-              {siteMeta.facebookUsername && (
-                <li>
-                  <a
-                    href={`https://www.facebook.com/${siteMeta.facebookUsername}`}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    <Facebook />
-                  </a>
-                </li>
-              )}
               {siteMeta.instagramUsername && (
                 <li>
                   <a
@@ -98,17 +33,24 @@ const Footer = () => {
                   </a>
                 </li>
               )}
-              {siteMeta.linkedinUsername && (
-                <li>
-                  <a
-                    href={`https://www.linkedin.com/in/${siteMeta.linkedinUsername}`}
-                    target="_blank"
-                    rel="nofollow noreferrer noopener"
-                  >
-                    <Linkedin />
-                  </a>
-                </li>
-              )}
+              <li>
+                <a
+                  href={`https://www.youtube.com/@song_camp`}
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  <Youtube />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:tydollasun@trapisgod.com"
+                  target="_blank"
+                  rel="nofollow noreferrer noopener"
+                >
+                  <Gmail />
+                </a>
+              </li>
             </ul>
           </FooterMenuStyles>
         ) : (
@@ -118,16 +60,15 @@ const Footer = () => {
       <CopyrightStyles>
         <div className="container container__tight">
           <p>
-            Designed & developed by{" "}
-            <a
-              href={siteMeta.developerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {siteMeta.developerName}
-            </a>
+            Samsung-dong 27-28, Gangnam-gu, Seoul, Republic of Korea, 서울특별시
+            강남구 삼성동 27-28, B2 플러스빌딩 (트랩이스갓사운드)
             <span>.</span>
           </p>
+        </div>
+      </CopyrightStyles>
+      <CopyrightStyles>
+        <div className="container container__tight">
+          <p>Copyright © TrapisGodSound Corporation. All Rights Reserved.</p>
         </div>
       </CopyrightStyles>
     </FooterStyles>

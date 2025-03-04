@@ -20,7 +20,7 @@ export const PostItemStyles = styled(Link)`
   flex: 0 0 100%;
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
-  padding: 20px 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -40,13 +40,13 @@ export const PostItemStyles = styled(Link)`
 
   @media (min-width: 1024px) {
     flex-basis: calc(33.333% - 27px);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: 1200px) {
     width: calc(33.333% - 54px);
-    padding: 50px 30px;
+    padding: 20px;
   }
 
   h4 {

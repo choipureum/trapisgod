@@ -5,8 +5,8 @@ import BannerModule from "../components/BannerModule/BannerModule"
 import BasicTextModule from "../components/BasicTextModule/BasicTextModule"
 import PerksModule from "../components/PerksModule/PerksModule"
 import Perk from "../components/PerksModule/Perk"
-import Features from "../components/Features/Features"
-import LatestPosts from "../components/Post/LatestPosts"
+// import Features from "../components/Features/Features"
+// import LatestPosts from "../components/Post/LatestPosts"
 
 const Index = () => {
   return (
@@ -14,29 +14,18 @@ const Index = () => {
       <Seo title="Home" />
       <Layout>
         <BannerModule
-          title="Trapisgod 사이트만들자 푸름아"
-          subTitle="Using a combination of Gatsby and Contentful, Barcadia is ready to deploy and simple to use."
+          title="TrapIsGodSound"
+          subTitle="TrapIsGodSound(트랩이스갓사운드)는 K-Culture를 이끄는 종합 콘텐츠 제작사로, 차세대 예술 산업을 창조하는 선도적인 회사입니다."
         />
         <BasicTextModule
-          title="A super-fast theme that is easy to get started, using the power of
-            GatsbyJS"
-          content="Using modern CSS properties such as grid, this theme is optmised for
-            speed and mobile devices. Giving users an excellent experience on
-            any device. Future-proofing your product."
-          link="/products"
-          linkText="View Products"
+          title="TrapisgodSound: Leading Innovation in Global Entertainment  "
+          content="트랩이스갓사운드는 글로벌 엔터테인먼트 산업에서 다양한 주요 파트너들과 협력하여, 음악 및 방송 콘텐츠 분야에서 지속적으로 혁신을 이끌어가고 있습니다."
+          link="/partnership"
+          linkText="Partnership"
         />
         <PerksModule>
           <Perk title="The Title" content="The content" />
         </PerksModule>
-        <Features
-          title="Featured Products from Barcadia."
-          introduction="Vivamus quam mauris, pulvinar vel mauris id, interdum semper neque. Proin malesuada libero eget tellus scelerisque, id egestas tortor egestas."
-        />
-        <LatestPosts
-          title="The Latest from Barcadia"
-          introduction="Cras scelerisque, tellus sed gravida tincidunt, velit tellus blandit justo, nec viverra augue erat in erat. Maecenas iaculis sed purus non fringilla."
-        />
       </Layout>
     </>
   )

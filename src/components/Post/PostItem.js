@@ -1,16 +1,30 @@
 import * as React from "react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Button from "../Button/Button"
 import { PostItemStyles } from "./PostStyles"
 
 const BlogItem = ({ node }, key) => {
-  const { title, gatsbyPath, introduction, createdAt } = node
+  const { title, introduction, logo } = node
+  const logoImage = getImage(logo)
   return (
-    <PostItemStyles key={key} to={gatsbyPath}>
-      <h4>{title}</h4>
-      {introduction && <p>{introduction}</p>}
-      <div className="blogitem__meta">
-        <Button as="span" text="Read More" arrow={true} />
-        <p>{createdAt}</p>
+    <PostItemStyles key={key} style={{ height: "86px" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          justifyContent: "center",
+        }}
+      >
+        {logo && (
+          <GatsbyImage
+            className="logo__image"
+            image={logoImage}
+            alt={`${title} feed`}
+            style={{ width: "34px", height: "34px", borderRadius: "5px" }}
+          />
+        )}
+        <h4 style={{ marginBottom: 0 }}>{title}</h4>
       </div>
     </PostItemStyles>
   )

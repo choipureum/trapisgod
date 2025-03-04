@@ -11,7 +11,7 @@ const useFeaturedProduct = () => {
       ) {
         nodes {
           title
-          gatsbyPath(filePath: "/products/{contentfulProduct.sku}")
+          gatsbyPath(filePath: "/works/{contentfulProduct.sku}")
           featureThisProduct
           introduction
           headerImage {

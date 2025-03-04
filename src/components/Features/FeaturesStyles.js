@@ -23,7 +23,7 @@ export const FeaturedProductsStyles = styled.section`
 `
 
 export const FeaturedProductStyles = styled.aside`
-  min-height: 408px;
+  min-height: 200px;
   background-color: #000;
   flex: 0 0 80%;
   overflow: hidden;
@@ -35,21 +35,19 @@ export const FeaturedProductStyles = styled.aside`
   transition: border-color 0.6s ease, box-shadow 0.6s ease;
 
   @media (min-width: 414px) {
-    min-height: 434px;
+    min-height: 234px;
   }
 
   @media (min-width: 768px) {
-    min-height: 500px;
-    flex-basis: 40%;
+    min-height: 300px;
   }
 
   @media (min-width: 1024px) {
-    min-height: 600px;
+    min-height: 400px;
   }
 
   @media (min-width: 1200px) {
     flex-basis: 33.333%;
-    flex-shrink: 1;
   }
 
   .features__item--img {

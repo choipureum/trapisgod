@@ -116,7 +116,7 @@ export const FooterMenuStyles = styled.div`
 
 export const CopyrightStyles = styled.div`
   font-size: 13px;
-  padding-top: var(--gap);
+  padding-top: "10px";
 
   p {
     margin: 0;

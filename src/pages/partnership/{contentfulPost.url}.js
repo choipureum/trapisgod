@@ -20,6 +20,13 @@ export const data = graphql`
     contentfulPost(id: { eq: $id }) {
       title
       introduction
+      logo {
+        gatsbyImageData(
+          width: 30
+          placeholder: BLURRED
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
       content {
         raw
       }

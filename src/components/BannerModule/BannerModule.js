@@ -49,7 +49,7 @@ const BannerModule = ({ children, title, subTitle, price, enquire }) => {
                   to="/contact"
                 />
               )}
-              <Button onClick={scrollToArea} text="trapisgod portfolio" />
+              <Button onClick={scrollToArea} text="trapisgod works" />
             </div>
           </div>
         </div>

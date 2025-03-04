@@ -9,8 +9,8 @@ const FeaturedProduct = ({ feature }) => {
   const image = getImage(headerImage)
 
   return (
-    <FeaturedProductStyles>
-      <Link to={gatsbyPath}>
+    <FeaturedProductStyles style={{ height: "100px" }}>
+      <Link>
         <GatsbyImage
           className="features__item--img"
           image={image}
@@ -20,7 +20,6 @@ const FeaturedProduct = ({ feature }) => {
           <div className="features__item--content">
             {title && <h4>{title}</h4>}
             {introduction && <p>{introduction}</p>}
-            <Button text="Read More" as="span" arrow={true} />
           </div>
         )}
       </Link>

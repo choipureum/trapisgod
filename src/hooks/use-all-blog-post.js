@@ -8,9 +8,16 @@ const useAllBlogPost = () => {
       allContentfulPost(sort: { fields: createdAt, order: DESC }) {
         nodes {
           title
-          gatsbyPath(filePath: "/news/{contentfulPost.url}")
+          gatsbyPath(filePath: "/partnership/{contentfulPost.url}")
           createdAt(formatString: "DD MMMM, YYYY")
           introduction
+          logo {
+            gatsbyImageData(
+              width: 30
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
         }
       }
     }

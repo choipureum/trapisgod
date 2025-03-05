@@ -13,7 +13,7 @@ const useAllBlogPost = () => {
           introduction
           logo {
             gatsbyImageData(
-              width: 30
+              width: 44
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )

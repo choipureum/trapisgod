@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FeaturedProductStyles } from "./FeaturesStyles"
 
 const FeaturedProduct = ({ feature }) => {
-  const { gatsbyPath, headerImage, title, introduction } = feature
+  const { headerImage, title, introduction } = feature
   const image = getImage(headerImage)
 
   return (

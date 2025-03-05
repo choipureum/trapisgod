@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-partnership-contentful-post-url-js",
+    "path": "/partnership/t-o-p-media/",
+    "result": {"data":{"contentfulPost":{"title":"T.O.P Media","introduction":null,"logo":{"gatsbyImageData":null},"content":null,"createdAt":"04 March, 2025"}},"pageContext":{"id":"749d9706-b5bd-5c59-b2aa-1f95939b38bf","url":"t-o-p-media","__params":{"url":"t-o-p-media"}}},
+    "staticQueryHashes": ["1412672113","1852691584","2870553852","3033999223","911752948"]}

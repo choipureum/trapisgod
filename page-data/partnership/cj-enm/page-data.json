@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-partnership-contentful-post-url-js",
+    "path": "/partnership/cj-enm/",
+    "result": {"data":{"contentfulPost":{"title":"CJ ENM","introduction":"cjenm","logo":{"gatsbyImageData":null},"content":null,"createdAt":"04 March, 2025"}},"pageContext":{"id":"ae17d2f9-7967-5779-88fd-a2b303267d2f","url":"cj-enm","__params":{"url":"cj-enm"}}},
+    "staticQueryHashes": ["1412672113","1852691584","2870553852","3033999223","911752948"]}
